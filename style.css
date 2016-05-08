@@ -19,13 +19,35 @@ p {
 
 #menuBarNav {
   display: block;
-  position: static;
   background-color: #e04432;
   top: 0px;
   margin: 0px;
+  box-shadow: 0px 2px 10px black;
+  min-height:70px;
 }
 
 #menuBarNav ul {
   margin: 0px;
   padding: 0px;
+}
+
+#menuBarNav ul li {
+  display: inline-block;
+  font-family: "Droid Sans", sans-serif;
+  background-color: #e04432;
+  margin: 0;
+  padding-right: 5%;
+  padding-left: 5%;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  height: 70px;
+}
+
+#menuBarNav ul li a {
+  color: #eeeeee;
+  text-decoration: none;
+  text-shadow: 1px 1px 1px black;
+  text-align:center;
+  line-height: 70px;
+  font-size: 19px;
 }
