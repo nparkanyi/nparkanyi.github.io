@@ -23,7 +23,7 @@ p {
   top: 0px;
   margin: 0px;
   box-shadow: 0px 2px 10px black;
-  min-height:60px;
+  min-height: 60px;
 }
 
 #menuBarNav ul {
@@ -35,23 +35,45 @@ p {
   display: inline-block;
   font-family: "Droid Sans", sans-serif;
   background-color: #e04432;
+  transition: background-color 0.3s;
   margin: 0;
-  padding-right: 5%;
-  padding-left: 5%;
+  padding-right: 30px;
+  padding-left: 30px;
   padding-top: 20px;
   padding-bottom: 20px;
   height: 20px;
+  width: 72px;
+  line-height: 20px;
+  text-align: center;
+  font-size: 20px;
+  color: #eeeeee;
+  text-shadow: 1px 1px 1px black;
+}
+
+#menuBarNav ul li a {
+  color: #eeeeee;
+  text-decoration: none;
 }
 
 #menuBarNav ul li:hover {
   background-color: #872d5a;
 }
 
-#menuBarNav ul li a {
-  color: #eeeeee;
-  text-decoration: none;
-  text-shadow: 1px 1px 1px black;
-  text-align:center;
-  line-height: 20px;
-  font-size: 20px;
+li.dropdown > ul {
+  display: none;
+  position: absolute;
+  top: 60px;
+  width: 260px;
+  box-shadow: 0px 2px 10px black;
+  transform: translateX(-30px);
+  text-align: center;
+}
+
+li.dropdown:hover > ul {
+  display: block;
+}
+
+li.dropdown:hover > ul > li {
+  display: block;
+  min-width: 200px;
 }
