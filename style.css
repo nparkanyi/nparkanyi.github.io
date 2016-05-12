@@ -1,18 +1,16 @@
 body {
   background-color: #373631;
   margin: 0px;
+  color: #ece9e9
 }
 
 h1 {
-  font-family: "Droid Sans", sans-serif;
-  color: #ece9e9;
   text-shadow: 1px 1px 1px black;
   text-align: center;
 }
 
-p {
-  font-family: "Droid Sans", sans-serif;
-  color: #ece9e9;
+h2 {
+  text-shadow: 1px 1px 1px black;
 }
 
 #content {
@@ -20,6 +18,16 @@ p {
   margin-left: 15%;
   margin-right: 15%;
   margin-top: 30px;
+  font-family: "Droid Sans", sans-serif;
+}
+
+#content a {
+  color: #eeeeee;
+  transition: color 0.3s;
+}
+
+#content a:hover {
+  color: #e04432;
 }
 
 /* Menu bar stuff */
