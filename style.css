@@ -15,6 +15,13 @@ p {
   color: #ece9e9;
 }
 
+#content {
+  display: block;
+  margin-left: 15%;
+  margin-right: 15%;
+  margin-top: 30px;
+}
+
 /* Menu bar stuff */
 
 #menuBarNav {
@@ -56,6 +63,10 @@ p {
 }
 
 #menuBarNav ul li:hover {
+  background-color: #872d5a;
+}
+
+#menuBarNav ul li:active {
   background-color: #872d5a;
 }
 
